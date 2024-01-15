@@ -14,13 +14,16 @@ class StudentService {
         return students[0]
     }
 
-    async attendance(studentId, lessonId, attendanceStatus) {
+    async academicPerformance(studentId, lessonId, attendanceStatus, progressValue) {
         const connect = await connection
         if(!studentId || !lessonId || !attendanceStatus) {
             throw ApiError.BadRequest(`Не все поля заолненны`)
         }
-        await connect.execute("INSERT INTO `attendance`(`student_id`, `lesson_id`, `attendance_status`) VALUES(?,?,?)", [studentId, lessonId, attendanceStatus])
-        return {studentId, lessonId, attendanceStatus}
+        if(progressValue == undefined) {
+            progressValue = null
+        }
+        await connect.execute("INSERT INTO `academic_performance` (`student_id`, `lesson_id`, `attendance_status`, `progress_value`) VALUES(?,?,?,?)", [studentId, lessonId, attendanceStatus, progressValue])
+        return {studentId, lessonId, attendanceStatus, progressValue}
     }
 }
 

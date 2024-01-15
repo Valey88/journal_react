@@ -21,11 +21,11 @@ class StudentController {
         }
     }
 
-    async attendance(req, res, next) {
+    async academicPerformance(req, res, next) {
         try {
-            const { student_id, lesson_id, attendance_status } = req.body
-            const attendance = await studentService.attendance(student_id, lesson_id, attendance_status)
-            return res.json(attendance)
+            const { student_id, lesson_id, attendance_status, progress_value } = req.body
+            const academicPerformance = await studentService.academicPerformance(student_id, lesson_id, attendance_status, progress_value)
+            return res.json(academicPerformance)
         } catch(error) {
             next(error)
         }

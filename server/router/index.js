@@ -13,7 +13,7 @@ router.get("/get_all_subjects", SubjectController.getAllSubjects)
 router.get("/student/:id", StudentController.getStudentById)
 router.get("/students/:class_id", StudentController.getStudentsByClassId)
 
-router.post("/set_attendance", StudentController.attendance)
+router.post("/academic_performance", StudentController.academicPerformance)
 
 // topic
 router.get("/topics/:subject_id", TopicsController.getTopicsBySubjectId)
