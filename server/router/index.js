@@ -11,7 +11,11 @@ router.get("/get_all_subjects", SubjectController.getAllSubjects)
 
 // student
 router.get("/student/:id", StudentController.getStudentById)
+router.get("/students/:class_id", StudentController.getStudentsByClassId)
+
+router.post("/academic_performance", StudentController.academicPerformance)
 
 // topic
 router.get("/topics/:subject_id", TopicsController.getTopicsBySubjectId)
+
 module.exports = router
