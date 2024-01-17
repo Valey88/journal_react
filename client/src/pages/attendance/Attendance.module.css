@@ -1,0 +1,75 @@
+.attendance {
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  justify-content: center;
+}
+.container {
+  display: grid;
+  grid-gap: 50px;
+}
+.tables_block {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.table {
+  width: 1000px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.table_heading {
+  display: grid;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+.table_heading h1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.table thead th {
+  font-weight: bold;
+  text-align: left;
+  border: none;
+  padding: 10px 15px;
+  background: #d8d8d8;
+  font-size: 14px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.table tbody td {
+  text-align: left;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  padding: 10px 15px;
+  font-size: 14px;
+  vertical-align: top;
+}
+.table thead tr th:first-child,
+.table tbody tr td:first-child {
+  border-left: none;
+}
+.table thead tr th:last-child,
+.table tbody tr td:last-child {
+  border-right: none;
+}
+.table tbody tr:nth-child(even) {
+  background: #f3f3f3;
+}
+.select {
+  width: 60px;
+  height: 30px;
+  border: 2px solid #1f3856;
+  font-size: 16px;
+}
+
+.select2 {
+  height: 40px;
+  border: 2px solid #1f3856;
+  font-size: 16px;
+}

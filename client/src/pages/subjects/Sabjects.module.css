@@ -1,0 +1,27 @@
+.Sabjects {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+.contentBlockButtons {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 30px;
+}
+.contentBlockButtons button {
+  width: 500px;
+}
+.add_object {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+}
+.return {
+  width: 100%;
+  padding-top: 30px;
+}
+.return button {
+  width: 500px;
+}

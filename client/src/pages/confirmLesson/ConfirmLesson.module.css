@@ -1,0 +1,15 @@
+.checkbox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  grid-gap: 50px;
+  padding-bottom: 50px;
+}
+.checkbox button {
+  border: none;
+}
+.checkbox button:hover {
+  background-color: #1f3856;
+  color: #fff;
+  transition: 0.5s;
+}

@@ -1,23 +1,23 @@
-button img{
-    transition: 1s;
+button img {
+  transition: 1s;
 }
 
-button:hover img{
-    transform: rotate(180deg);
-    transition: 1s;
+button:hover img {
+  transform: rotate(180deg);
+  transition: 1s;
 }
 
 .object_btn {
-    width: 100%;
+  width: 100%;
 }
 
 .add_object {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .add_object p {
-    text-decoration: underline;
-    font-size: 24px;
+  text-decoration: underline;
+  font-size: 24px;
 }
